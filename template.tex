@@ -171,12 +171,13 @@ Algunos de esos métodos son: Gn (G1, G2, G3, G4).  Existen otras técnicas como
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %...................................................
 \begin{frame}[fragile]
+\frametitle{Método de atomización}
 \begin{figure}
 \includegraphics[scale=.65]{images/atomization-CH3OH}
-\caption{Diagrama del método de atomización de la molécula de metanol.}
 \end{figure}
+\tiny{\textit{Errol Lewars. Computational chemistry: introduction to the theory and applications of molecular and quantum mechanics. Springer, 2016.}}
 \begin{comment}
-El método G4 es un procedimiento que ha sido empleado frecuentemente en el cálculo de energías de enlace, entalpías de formación, potenciales de ionización y afinidades electrónicas. Una vez conocida la energía molecular, se puede calcular la entalpía de formación de la molécula en cuestión a  \textit{T} = 0. Para esto, se puede utilizar alguno de los tres enfoques más comúnes: el método de atomización, el método de formación o  el método de reacción isodésmica. De los tres enfoques anteriores, el método de atomización da mejores resultados, especialmente para moléculas orgánicas, y es conceptualmente el más sencillo, ya que consiste en romper
+El método G4 es un procedimiento que ha sido empleado frecuentemente en el cálculo de energías de enlace, entalpías de formación, potenciales de ionización y afinidades electrónicas. Una vez conocida la energía molecular, se puede calcular la entalpía de formación de la molécula en cuestión a  \textit{T} = 0. Para esto, se puede utilizar algunos de los tres enfoques más comúnes: el método de atomización, el método de formación o  el método de reacción isodésmica. De los tres enfoques anteriores, el método de atomización da mejores resultados, especialmente para moléculas orgánicas, y es conceptualmente el más sencillo, ya que consiste en romper
 los enlaces de la molécula para obtener a sus átomos en fase gasesosa. 
 \end{comment}
 \end{frame}
@@ -185,13 +186,15 @@ los enlaces de la molécula para obtener a sus átomos en fase gasesosa.
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %...................................................
 \begin{frame}[fragile]
-
+\frametitle{Termodinámica estadística}
 \begin{comment}
-Ahora bien, es común que las entalpías de formación estén tabuladas en condiciones normales de temperatura y presión, por lo que después de obtener las energías a \textit{T} = 0, es necesario calcularlas a \textit{T} = 298 K. Esto se puede hacer mediante la Termodinámica Estadística. La Termodinámica Estadística permite obtener el valor de la energía interna de una molécula, a \textit{T} = 298 K, mediante la función de partición de un gas ideal. Dicha función resulta ser un producto de funciones de partición relacionadas con movimientos traslacionales, rotacionales y vibracionales  \cite{McQuarrie1976, Nicolaides1996}. Brevemente, el término translacional contribuye con $\frac{3}{2}$ \textit{RT}, el término rotacional aporta $\frac{3}{2}$ \textit{RT} (aunque sólo \textit{RT} si la molécula es lineal). Estas cantidades son el resultado de considerar a las moléculas como si fueran partículas libres en una caja para el movimiento translacional, la aproximación del rotor rigido para el movimiento rotacional y el oscilador armónico para el movimiento vibracional. Las contribuciones electrónica y nuclear son ignoradas (es decir, la función de partición correspondiente se establece en la unidad). 
+Ahora bien, es común que las entalpías de formación estén tabuladas en condiciones normales de temperatura y presión, por lo que después de obtener las energías a \textit{T} = 0, es necesario calcularlas a \textit{T} = 298 K. Esto se puede hacer mediante la Termodinámica Estadística. La Termodinámica Estadística permite obtener el valor de la energía interna de una molécula, a \textit{T} = 298 K, mediante la función de partición de un gas ideal. Podemos definir a la \textbf{energía interna} como la  energía relacionada con el movimiento aleatorio y desordenado de las moléculas, es decir, la energía interna esta formada por energías de traslación, rotación, vibración, electrónica y nuclear, así como interacciones intermoleculares. 
 
 
+Y la función partición resulta ser un producto de funciones de partición relacionadas con movimientos traslacionales, rotacionales y vibracionales. El término translacional contribuye con 1/2 RT, el término rotacional aporta 3/2 RT (aunque sólo RT si la molécula es lineal). Estas cantidades son el resultado de considerar a las moléculas como si fueran partículas libres en una caja para el movimiento translacional, la aproximación del rotor rigido para el movimiento rotacional y el oscilador armónico para el movimiento vibracional. Las contribuciones electrónica y nuclear son ignoradas (es decir, la función de partición correspondiente se establece en la unidad). 
 
-El procedimiento descrito anteriormente suele ser bastante tedioso si se realiza manualmente, por lo que resulta indispensable contar con una herramienta que permita calcular las correcciones térmicas de manera automática. Dicha herramienta se materializó como resultado de este trabajo en un algoritmo de cómputo que determina la entalpía de formación de compuestos orgánicos a \textit{T} = 298 K, utilizando archivos de salida del software \textit{Gaussian}, y de manera que se añadan a voluntad correcciones finas como las de Nicolaides.
+
+Este procedimiento suele ser bastante tedioso si se realiza manualmente, por lo que resulta indispensable contar con una herramienta que permita calcular las correcciones térmicas de manera automática. 
 \end{comment}
 
 \begin{equation}
@@ -216,10 +219,10 @@ Q = Q_{tras}Q_{rot}Q_{vib}Q_{elec}
 \end{equation}
 
 
-\begin{equation}
-[H(T)-H(0)]_{rot}^{lineal} =  RT
-\label{eq:3.30}
-\end{equation}
+%\begin{equation}
+%[H(T)-H(0)]_{rot}^{lineal} =  RT
+%\label{eq:3.30}
+%\end{equation}
 
 \begin{equation}
 [H(T)-H(0)]_{vib}=RT \sum_i \left(\frac{h\nu_i}{kT}\right)\left(\frac{e^{\frac{-h\nu_i}{kT}}}{1-e^{\frac{-h\nu_i}{kT}}}\right)
@@ -323,6 +326,31 @@ El desarollo de software científico de alto rendimiento en Termoquímica es una
 %*************************************************************
 \section{Metodología}
 %*************************************************************
+\begin{frame}[fragile]{Code}
+\frametitle{Script}
+\begin{comment}
+Este script genera un archivo que se utilizará como entrada para el programa.
+Nombre del programa JMHP. Se supone que el archivo de salida gaussiano corresponde
+a un cálculo G4 (o cualquier Gn), y que el archivo de entrada gaussiana contenía
+una matriz z. Es decir, la molécula a estudiar con un método G4 debe ser
+dada en el archivo de entrada gaussiana como una matriz z.
+
+Por lo general, 'gaussianoutfile' tiene una extensión *.out o *.log.
+El script utilizará la matriz z inicial para determinar el número de átomos,
+el número de diferentes especies atómicas, etc. Esta matriz z se registra
+dentro del archivo de salida gaussiana.
+
+Si no se dan opciones, los contenidos de configuración generados (la configuración
+parámetros para ejecutar JMHP-ProgramName) se mostrarán en la pantalla.
+\end{comment}
+\begin{block}{gendeltahfinputfile}
+Este script genera un archivo que se utilizará como entrada para el programa EnthalpyNIST. El archivo de salida de Gaussian corresponde a un cálculo G4 (o cualquier Gn).
+\end{block}
+\end{frame}
+%...................................................
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%...................................................
 \begin{frame}
 \frametitle{Diagrama de flujo 1}
 \begin{center}
@@ -347,7 +375,18 @@ El desarollo de software científico de alto rendimiento en Termoquímica es una
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %...................................................
+\begin{frame}
 
+\begin{center}
+\begin{figure}[h]
+\includegraphics[scale=.3]{images/procesoH298.png}
+\end{figure}
+\end{center}
+\end{frame}
+%...................................................
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%...................................................
 \begin{frame}[fragile]{Code}
 \frametitle{Inicio}
 
@@ -627,7 +666,7 @@ El tipo de aproximación usada solo puede tener dos valores, 0 y 1. Si el archiv
 
 También existen dos posibles valores en el archivo de entrada para el parámetro de la linealidad de la molécula. Un valor de 1 devolverá un $RT$ en la contribución rotacional, en cambio, si el valor es 0, el condicional retornará un $\frac{3}{2}$ de $RT$ en la contribución rotacional. Después, se inicia una estructura de control que se repetirá el mismo número de veces que el número de modos de vibración de la molécula (una molécula que tiene $N$ especies atómicas puede tener solamente $3N-6$ modos fundamentales de vibración para una molécula no lineal, o $3N-5$ si la molécula es lineal). \\
 
-La iteración usa las ecuaciones \ref{eq:3.27}, \ref{eq:3.28}, \ref{eq:3.29}, y \ref{eq:3.31} que provienen de la Termodinámica Estadística \cite{McQuarrie1976, Irikura1998} ,para determinar a la energía interna como una suma de las contribuciones vibracionales, rotacionales, traslacionales y electrónicas (ecuación \ref{eq:3.31}). La contribuci\'{o}n traslacional siempre tendr\'{a} el valor de $\frac{3}{2} RT$ para cualquier mol\'{e}cula (ecuación \ref{eq:3.27}). Adem\'{a}s, se agrega un $RT$ adicional a la energ\'{i}a interna para convertir la energía en entalpía (el llamado término $pV$, ecuación \ref{eq:3.29}). Cabe aclarar que el valor obtenido en la primera iteración es acumulativo para los subsecuentes. Concluida la determinación, se devuelve la suma total de la energía interna. Para la \textbf{molécula X} el número de modos de vibración será 12 (es una molécula no lineal), por lo consiguiente, la ecuación \ref{eq:3.30} se repetirá 12 veces con cada una de las frecuencias de la molécula. El resultado final es la suma de las contribuciones de la energía interna, véase la ecuación \ref{eq:3.31}. 
+La suma es acumulativa y son usadas las ecuaciones \ref{eq:3.27}, \ref{eq:3.28}, \ref{eq:3.29}, y \ref{eq:3.31} que provienen de la Termodinámica Estadística,para determinar a la energía interna como una suma de las contribuciones vibracionales, rotacionales, traslacionales y electrónicas (ecuación \ref{eq:3.31}). La contribuci\'{o}n traslacional siempre tendr\'{a} el valor de $\frac{3}{2} RT$ para cualquier mol\'{e}cula (ecuación \ref{eq:3.27}). Adem\'{a}s, se agrega un $RT$ adicional a la energ\'{i}a interna para convertir la energía en entalpía (el llamado término $pV$, ecuación \ref{eq:3.29}). Cabe aclarar que el valor obtenido en la primera iteración es acumulativo para los subsecuentes. Concluida la determinación, se devuelve la suma total de la energía interna. Para la \textbf{molécula X} el número de modos de vibración será 12 (es una molécula no lineal), por lo consiguiente, la ecuación \ref{eq:3.30} se repetirá 12 veces con cada una de las frecuencias de la molécula. El resultado final es la suma de las contribuciones de la energía interna, véase la ecuación \ref{eq:3.31}. 
 \end{comment}
 
 \begin{multline}
@@ -857,7 +896,7 @@ Los derivados de nitrobenzaladeh\'{i}do son compuestos aromáticos que tienen un
 	\multicolumn{3}{||c||}{$\enthalpy*(f){}(298.15 \mathrm{K})\; \mathrm{kJ\;mol^{-1}}$}\\
 \hline
 \hline
-	n-NBA & Ximello \textit{et al.} & EnthalpyTajti\\ 
+	n-NBA & Ximello \textit{et al.}[1] & EnthalpyTajti\\ 
 \hline 
 2NBAa & -28.19 & -28.19\\
 \hline
@@ -870,13 +909,14 @@ Los derivados de nitrobenzaladeh\'{i}do son compuestos aromáticos que tienen un
 4NBAa & -53.84 & -53.84\\ 
 \hline  
 \end{tabular} 
-	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G4 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al}. Obsérvese la segunda columna. Entalpías de formación en fase gaseosa obtenida por nuestro programa EnthalpyTajti, véase la tercer columna.}
+	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G4 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al.}}
 \label{Ximello-table-1}
 \end{table}
+\textit{\tiny{[1] Ximello A., Ramos F., Rojas A., Hernández-Pérez J. M., Camarillo E. A., Solano-Altamirano J. M., Sandoval-Lira J., y Flores H., J. Chem. Eng. 65, 4935 (2020).}}
 \end{frame}
 
 \begin{comment}
-Las entalpías de formación de las moléculas fueron calculadas utilizando los métodos G4 y G3MP2, así mismo, se utilizaron las aproximaciones de oscilador armónico/rotor rígido \cite{McQuarrie1976} y Nicolaides \textit{et al.}\cite{Nicolaides1996} en todas las moléculas. Para ello, las frecuencias se calcularon a un nivel teórico B3LYP/6-31G(2df,p) escaladas a 0.9854 y 0.89290. Las entalpías átomicas de formación  fueron a $T$ = 0 y sus correcciones térmicas a $T$ = 298 K se tomaron de la referencia \cite{NIST1998} (excluyendo el valor del átomo de Carbono, cuyo dato coincide con Tajti \textit{et al.} \cite{Tajti2004} para el método G4). Los archivos de salida proceden del software \textbf{Gaussian09}, mientras que el archivo que contiene la información necesaria para nuestro programa fue obtenida por el script \textbf{\textit{gendeltahfinputfile}} (proviente del \textbf{Laboratorio de Fisicoquímica Orgánica Teórica de la BUAP}). Los valores de la entalpía de formación a $T$ = 298 K calculados por nuestro programa del 2-nitrobenzaldehído (2NBA), 3-nitrobenzaldehído (3NBA) y 4-nitrobenzaldehído (4NBA) se muestran a continuación.
+Las entalpías de formación de las moléculas fueron calculadas utilizando los métodos G4 y G3MP2, así mismo, se utilizaron las aproximaciones de oscilador armónico/rotor rígido  y Nicolaides  en todas las moléculas. Para ello, las frecuencias se calcularon a un nivel teórico B3LYP/6-31G(2df,p) escaladas a 0.9854 y 0.89290. Las entalpías átomicas de formación  fueron a $T$ = 0 y sus correcciones térmicas a $T$ = 298 K se tomaron de la referencia \cite{NIST1998} (excluyendo el valor del átomo de Carbono, cuyo dato coincide con Tajti  para el método G4). Los archivos de salida proceden del software \textbf{Gaussian09}, mientras que el archivo que contiene la información necesaria para nuestro programa fue obtenida por el script \textbf{\textit{gendeltahfinputfile}} (proviente del \textbf{Laboratorio de Fisicoquímica Orgánica Teórica de la BUAP}). Los valores de la entalpía de formación a $T$ = 298 K calculados por nuestro programa del 2-nitrobenzaldehído (2NBA), 3-nitrobenzaldehído (3NBA) y 4-nitrobenzaldehído (4NBA) se muestran a continuación.
 \end{comment}
 
 %...................................................
@@ -892,7 +932,7 @@ Las entalpías de formación de las moléculas fueron calculadas utilizando los 
 	\multicolumn{3}{||c||}{$\enthalpy*(f){}(298.15 \mathrm{K})\; \mathrm{kJ\;mol^{-1}}$}\\
 \hline
 \hline
-	n-NBA & Ximello \textit{et al.} & EnthalpyNIST\\ 
+	n-NBA & Ximello \textit{et al.}[1] & EnthalpyNIST\\ 
 \hline 
 2NBAa & -36.42 & -36.42\\
 \hline
@@ -905,9 +945,10 @@ Las entalpías de formación de las moléculas fueron calculadas utilizando los 
 4NBAa & -52.91 & -52.91\\ 
 \hline  
 \end{tabular} 
-	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G3MP2 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al.} Obsérvese la segunda columna. Entalpías de formación en fase gaseosa obtenida por nuestro programa EnthalpyNIST, véase la tercer columna.}
+	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G3MP2 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al.} Obsérvese la segunda columna.}
 \label{Ximello-table-2}
 \end{table}
+\textit{\tiny{[1] Ximello A., Ramos F., Rojas A., Hernández-Pérez J. M., Camarillo E. A., Solano-Altamirano J. M., Sandoval-Lira J., y Flores H., J. Chem. Eng. 65, 4935 (2020).}}
 \end{frame}
 
 %...................................................
@@ -923,7 +964,7 @@ Las entalpías de formación de las moléculas fueron calculadas utilizando los 
 	\multicolumn{3}{||c||}{$\enthalpy*(f){}(298.15 \mathrm{K})\; \mathrm{kJ\;mol^{-1}}$}\\
 \hline
 \hline
-	n-NBA & Ximello \textit{et al.} & EnthalpyArgonne\\ 
+	n-NBA & Ximello \textit{et al.}[1] & EnthalpyArgonne\\ 
 \hline
 2NBAa & -35.01 & -35.01\\
 \hline
@@ -936,14 +977,15 @@ Las entalpías de formación de las moléculas fueron calculadas utilizando los 
 4NBAa & -51.50 & -51.50\\ 
 \hline  
 \end{tabular} 
-	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G3MP2 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al.} Obsérvese la segunda columna. Entalpías de formación en fase gaseosa obtenida por nuestro programa EnthalpyArgonne, véase la tercer columna.}
+	\caption{Entalpías de formación en fase gasesosa obtenidas mediante el método G3MP2 de Gaussian de 2NBA, 3NBA y 4NBA a $T$ = 298 K y $p^{\circ}$ = 0.1 MPa, reportadas por Ximello \textit{et al.} Obsérvese la segunda columna.}
 \label{Ximello-table-3}
 \end{table}
+\textit{\tiny{[1] Ximello A., Ramos F., Rojas A., Hernández-Pérez J. M., Camarillo E. A., Solano-Altamirano J. M., Sandoval-Lira J., y Flores H., J. Chem. Eng. 65, 4935 (2020).}}
 \end{frame}
 
 
 \begin{comment}
-Las 15 pruebas preliminares también se realizaron con el fin de reconocer posibles errores en los resultados durante la ejecución de los programas \textbf{EnthalpyTajti}, \textbf{EnthalpyNIST} y \textbf{EnthalpyArgonne}. No obstante, lo anterior sirve para confirmar que las comparación con Ximello \textit{et al.} \cite{Ximello2020} arroja datos con un alto nivel de precisión. Por esta razón, podemos ratificar la utilidad de nuestro programa para realizar cálculos que requieran un alto nivel de confiabilidad en los resultados teóricos. 
+Las 15 pruebas preliminares también se realizaron con el fin de reconocer posibles errores en los resultados durante la ejecución de los programas \textbf{EnthalpyTajti}, \textbf{EnthalpyNIST} y \textbf{EnthalpyArgonne}. No obstante, lo anterior sirve para confirmar que las comparación con Ximello \textit{et al.} arroja datos con un alto nivel de precisión. Por esta razón, podemos ratificar la utilidad de nuestro programa para realizar cálculos que requieran un alto nivel de confiabilidad en los resultados teóricos. 
 \end{comment}
 
 %...................................................
@@ -960,7 +1002,7 @@ Las 15 pruebas preliminares también se realizaron con el fin de reconocer posib
 
 \begin{itemize}
 
-\item Se un programa de cómputo científico que calcula entalpías de formación de compuestos orgánicos a \textit{T} = 298.15 K con correciones opcionales a la energía interna utilizando aproximaciones como Nicolaides \textit{et al.}, rotor rígido y oscilador armónico, empleando archivos de salida de Gaussian09.
+\item Se creó un programa de cómputo científico que calcula entalpías de formación de compuestos orgánicos a \textit{T} = 298.15 K con correciones opcionales a la energía interna utilizando aproximaciones como Nicolaides \textit{et al.}, rotor rígido y oscilador armónico, empleando archivos de salida de Gaussian09.
 
 \vspace{1cm}
 
