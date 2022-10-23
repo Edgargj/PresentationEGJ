@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.24)  18 OCT 2022 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.24)  23 OCT 2022 02:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1235,9 +1235,9 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
 )
 \verbatim@out=\write6
-runsystem(touch w18-test-2022101880.tex)...disabled (restricted).
+runsystem(touch w18-test-20221023130.tex)...disabled (restricted).
 
-runsystem(rm -f w18-test-2022101880.tex)...disabled (restricted).
+runsystem(rm -f w18-test-20221023130.tex)...disabled (restricted).
 
 runsystem(rm -f "template.gnuploterrors")...disabled (restricted).
 
@@ -1294,22 +1294,22 @@ LaTeX Info: Redefining \% on input line 30.
 )
 \openout1 = `template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1360,7 +1360,7 @@ LaTeX Font Info:    ... okay on input line 75.
 \everyMPtoPDFconversion=\toks70
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box109
-Package hyperref Info: Link coloring OFF on input line 75.
+Package hyperref Info: Link coloring OFF on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1373,68 +1373,68 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count397
 )
-LaTeX Info: Redefining \ref on input line 75.
-LaTeX Info: Redefining \pageref on input line 75.
-LaTeX Info: Redefining \nameref on input line 75.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
 
 (./template.out) (./template.out)
 \@outlinefile=\write7
 \openout7 = `template.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 75.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 76.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 75.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 76.
 \symnumbers=\mathgroup11
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 76.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/cmss/m/it on input line 7
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/bx/sl --> OT1/cmss/m/it on input line 
-75.
+76.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 75.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 76.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 75.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 75.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 76.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 75.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 75.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 75.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 76.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 75.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 75.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 76.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 75.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 76.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 75.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 75.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 75.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 75.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 75.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 76.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 75.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 75.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 76.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 76.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 7
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 7
-5.
+6.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 75.
+ut line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
@@ -1462,8 +1462,8 @@ Dictionary: translator-theorem-dictionary, Language: English
 ) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/translations/translations-basic-dictio
 nary-spanish.trsl
@@ -1471,9 +1471,9 @@ File: translations-basic-dictionary-spanish.trsl (spanish translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `spanish'. on input line 75.
+or `spanish'. on input line 76.
 
-Package chemgreek Info: Activating mapping `default' on line 75.
+Package chemgreek Info: Activating mapping `default' on line 76.
 
 
 
@@ -1488,36 +1488,36 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 \c@lstlisting=\count398
 
 (./template.nav)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 75.
+ut line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<images/buap02.pdf, id=78, 398.44939pt x 398.44939pt>
+<images/buap02.pdf, id=74, 398.44939pt x 398.44939pt>
 File: images/buap02.pdf Graphic file (type pdf)
 <use images/buap02.pdf>
-Package pdftex.def Info: images/buap02.pdf  used on input line 80.
+Package pdftex.def Info: images/buap02.pdf  used on input line 81.
 (pdftex.def)             Requested size: 56.90121pt x 56.90121pt.
-<images/fcq.pdf, id=79, 702.33926pt x 646.63983pt>
+<images/fcq.pdf, id=75, 702.33926pt x 646.63983pt>
 File: images/fcq.pdf Graphic file (type pdf)
 <use images/fcq.pdf>
-Package pdftex.def Info: images/fcq.pdf  used on input line 80.
+Package pdftex.def Info: images/fcq.pdf  used on input line 81.
 (pdftex.def)             Requested size: 56.89558pt x 56.9025pt.
 
-Overfull \vbox (5.98653pt too high) detected at line 80
+Overfull \vbox (5.98653pt too high) detected at line 81
  []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1546,48 +1546,43 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 (./template.vrb
-<images/LNS.png, id=353, 2099.4435pt x 841.2228pt>
-File: images/LNS.png Graphic file (type png)
-<use images/LNS.png>
-Package pdftex.def Info: images/LNS.png  used on input line 4.
-(pdftex.def)             Requested size: 314.90294pt x 126.17796pt.
+<images/CB.png, id=330, 5326.299pt x 2131.2423pt>
+File: images/CB.png Graphic file (type png)
+<use images/CB.png>
+Package pdftex.def Info: images/CB.png  used on input line 4.
+(pdftex.def)             Requested size: 312.8998pt x 142.2429pt.
 
-Overfull \hbox (7.61307pt too wide) in paragraph at lines 4--5
- [] 
- []
-
-) [5
-
- <./images/LNS.png>]
-\openout4 = `template.vrb'.
-
- (./template.vrb
-<images/Curtis.png, id=407, 433.62pt x 240.9pt>
-File: images/Curtis.png Graphic file (type png)
-<use images/Curtis.png>
-Package pdftex.def Info: images/Curtis.png  used on input line 2.
-(pdftex.def)             Requested size: 303.53192pt x 168.62883pt.
-) [6
-
- <./images/Curtis.png>]
-\openout4 = `template.vrb'.
-
-
-(./template.vrb
-<images/atomization-CH3OH.png, id=459, 501.7947pt x 218.7372pt>
-File: images/atomization-CH3OH.png Graphic file (type png)
-<use images/atomization-CH3OH.png>
-Package pdftex.def Info: images/atomization-CH3OH.png  used on input line 3.
-(pdftex.def)             Requested size: 326.16269pt x 142.17747pt.
-
-Overfull \hbox (18.87282pt too wide) in paragraph at lines 3--4
+Overfull \hbox (5.60992pt too wide) in paragraph at lines 4--5
  [] 
  []
 
 )
-Overfull \vbox (0.66644pt too high) detected at line 183
+Overfull \vbox (1.90965pt too high) detected at line 124
  []
 
+[5
+
+ <./images/CB.png>]
+\openout4 = `template.vrb'.
+
+ (./template.vrb
+<images/PC.png, id=380, 386.6445pt x 211.0284pt>
+File: images/PC.png Graphic file (type png)
+<use images/PC.png>
+Package pdftex.def Info: images/PC.png  used on input line 2.
+(pdftex.def)             Requested size: 270.6493pt x 147.71886pt.
+) [6
+
+ <./images/PC.png>]
+\openout4 = `template.vrb'.
+
+ (./template.vrb
+<images/atomization-CH3OH.png, id=429, 549.0111pt x 247.0831pt>
+File: images/atomization-CH3OH.png Graphic file (type png)
+<use images/atomization-CH3OH.png>
+Package pdftex.def Info: images/atomization-CH3OH.png  used on input line 3.
+(pdftex.def)             Requested size: 274.50487pt x 123.54124pt.
+)
 [7
 
  <./images/atomization-CH3OH.png>]
@@ -1602,12 +1597,16 @@ Overfull \vbox (0.66644pt too high) detected at line 183
 [9
 
 ]
-<images/toluene.png, id=627, 297.36093pt x 476.53032pt>
+<images/toluene.png, id=584, 371.2269pt x 491.1951pt>
 File: images/toluene.png Graphic file (type png)
 <use images/toluene.png>
-Package pdftex.def Info: images/toluene.png  used on input line 269.
-(pdftex.def)             Requested size: 59.47113pt x 95.30437pt.
- [10
+Package pdftex.def Info: images/toluene.png  used on input line 216.
+(pdftex.def)             Requested size: 89.09627pt x 117.88922pt.
+
+Overfull \vbox (2.81154pt too high) detected at line 216
+ []
+
+[10
 
  <./images/Toluene.png>] [11
 
@@ -1616,44 +1615,51 @@ Package pdftex.def Info: images/toluene.png  used on input line 269.
 ] [13
 
 ]
-\openout4 = `template.vrb'.
+<images/script.png, id=778, 845.0772pt x 527.8922pt>
+File: images/script.png Graphic file (type png)
+<use images/script.png>
+Package pdftex.def Info: images/script.png  used on input line 283.
+(pdftex.def)             Requested size: 295.78145pt x 184.76503pt.
 
- (./template.vrb) [14
+Overfull \vbox (1.28732pt too high) detected at line 283
+ []
 
-]
-<images/df1.pdf, id=888, 697.80664pt x 316.14041pt>
+[14
+
+ <./images/script.png>]
+<images/df1.pdf, id=826, 697.80658pt x 316.14041pt>
 File: images/df1.pdf Graphic file (type pdf)
 <use images/df1.pdf>
-Package pdftex.def Info: images/df1.pdf  used on input line 372.
-(pdftex.def)             Requested size: 314.01009pt x 142.26186pt.
+Package pdftex.def Info: images/df1.pdf  used on input line 296.
+(pdftex.def)             Requested size: 327.96913pt x 148.586pt.
 
-Overfull \hbox (6.72021pt too wide) in paragraph at lines 372--372
+Overfull \hbox (20.67926pt too wide) in paragraph at lines 296--296
  [] 
  []
 
 [15
 
  <./images/df1.pdf>]
-<images/df2.pdf, id=1503, 585.5947pt x 257.28117pt>
+<images/df2.pdf, id=1727, 582.66333pt x 252.47675pt>
 File: images/df2.pdf Graphic file (type pdf)
 <use images/df2.pdf>
-Package pdftex.def Info: images/df2.pdf  used on input line 384.
-(pdftex.def)             Requested size: 322.07808pt x 141.50508pt.
+Package pdftex.def Info: images/df2.pdf  used on input line 308.
+(pdftex.def)             Requested size: 332.12155pt x 143.91322pt.
 
-Overfull \hbox (14.78821pt too wide) in paragraph at lines 384--384
+Overfull \hbox (24.83168pt too wide) in paragraph at lines 308--308
  [] 
  []
 
 [16
 
  <./images/df2.pdf>]
-<images/pe.png, id=1817, 560.0925pt x 444.1393pt>
+<images/pe.png, id=2457, 561.89925pt x 433.62pt>
 File: images/pe.png Graphic file (type png)
 <use images/pe.png>
-Package pdftex.def Info: images/pe.png  used on input line 396.
-(pdftex.def)             Requested size: 280.04556pt x 222.06909pt.
+Package pdftex.def Info: images/pe.png  used on input line 320.
+(pdftex.def)             Requested size: 280.94893pt x 216.80946pt.
 
-Overfull \vbox (8.18198pt too high) detected at line 396
+Overfull \vbox (2.92235pt too high) detected at line 320
  []
 
 [17
@@ -1662,7 +1668,7 @@ Overfull \vbox (8.18198pt too high) detected at line 396
 \openout4 = `template.vrb'.
 
  (./template.vrb)
-Overfull \vbox (3.2781pt too high) detected at line 434
+Overfull \vbox (2.64894pt too high) detected at line 354
  []
 
 [18
@@ -1670,12 +1676,20 @@ Overfull \vbox (3.2781pt too high) detected at line 434
 ]
 \openout4 = `template.vrb'.
 
- (./template.vrb) [19
+ (./template.vrb
+<images/atomization-CH3OH-methods.png, id=2553, 549.0111pt x 247.0831pt>
+File: images/atomization-CH3OH-methods.png Graphic file (type png)
+<use images/atomization-CH3OH-methods.png>
+Package pdftex.def Info: images/atomization-CH3OH-methods.png  used on input li
+ne 4.
+(pdftex.def)             Requested size: 274.50487pt x 123.54124pt.
+) [19
 
-]
+ <./images/atomization-CH3OH-methods.png>]
 \openout4 = `template.vrb'.
 
- (./template.vrb) [20
+
+(./template.vrb) [20
 
 ]
 \openout4 = `template.vrb'.
@@ -1685,19 +1699,13 @@ Overfull \vbox (3.2781pt too high) detected at line 434
 ]
 \openout4 = `template.vrb'.
 
-
-(./template.vrb) [22
+ (./template.vrb) [22
 
 ]
 \openout4 = `template.vrb'.
 
- (./template.vrb
-Overfull \hbox (10.55592pt too wide) detected at line 16
- []$[]  \OT1/cmr/m/n/10.95 ^^A[]\OT1/mathkerncmss/m/sl/10.95 H[][] \OT1/cmss/m/
-n/10.95 = [] [] +  [][] + \OML/cmm/m/it/10.95 :::$ 
- []
 
-) [23
+(./template.vrb) [23
 
 ]
 \openout4 = `template.vrb'.
@@ -1712,101 +1720,59 @@ n/10.95 = [] [] +  [][] + \OML/cmm/m/it/10.95 :::$
 ]
 \openout4 = `template.vrb'.
 
- (./template.vrb
-Overfull \hbox (1.79625pt too wide) detected at line 16
- []$[]  [][]\OT1/mathkerncmss/m/sl/10.95 H[][][] \OT1/cmss/m/n/10.95 = [] [] + 
-[] [] \OML/cmm/m/it/10.95 :::$ 
+
+(./template.vrb
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+6.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+))
+Overfull \vbox (3.2781pt too high) detected at line 627
  []
 
-) [26
+[26
 
 ]
 \openout4 = `template.vrb'.
 
- (./template.vrb) [27
-
-]
-\openout4 = `template.vrb'.
-
  (./template.vrb
-Overfull \hbox (12.75688pt too wide) detected at line 26
- []$[]  \OT1/cmss/m/n/10.95 [\OT1/mathkerncmss/m/sl/10.95 H\OT1/cmss/m/n/10.95 
-(298\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/10.95 15) \OMS/cmsy/m/n/10.95 ^^@ \OT1/m
-athkerncmss/m/sl/10.95 H\OT1/cmss/m/n/10.95 (0)] = 1315\OML/cmm/m/it/10.95 :\OT
-1/cmss/m/n/10.95 1747 [] +  3718\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/10.95 4568 [
-] \OML/cmm/m/it/10.95 :::$ 
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 6.
+)
+Overfull \vbox (3.2781pt too high) detected at line 666
  []
 
+[27
 
-Overfull \hbox (18.6042pt too wide) detected at line 26
- []$[]\OML/cmm/m/it/10.95 ::: \OT1/cmss/m/n/10.95 +  3718\OML/cmm/m/it/10.95 :\
-OT1/cmss/m/n/10.95 4568 [] +  2478\OML/cmm/m/it/10.95 :\OT1/cmss/m/n/10.95 9712
- [] = []$ []  
- []
-
-) [28
+] [28
 
 ]
 \openout4 = `template.vrb'.
 
  (./template.vrb) [29
 
-]
-\openout4 = `template.vrb'.
+] [30
 
- (./template.vrb
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-10.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <6> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 14.
-)
-Overfull \vbox (3.2781pt too high) detected at line 752
- []
-
-[30
+] [31
 
 ]
-\openout4 = `template.vrb'.
+<images/n-NBA.pdf, id=3168, 302.63815pt x 130.04836pt>
+File: images/n-NBA.pdf Graphic file (type pdf)
+<use images/n-NBA.pdf>
+Package pdftex.def Info: images/n-NBA.pdf  used on input line 740.
+(pdftex.def)             Requested size: 307.28987pt x 132.05225pt.
+ [32
 
- (./template.vrb)
-Overfull \vbox (3.2781pt too high) detected at line 791
- []
-
-[31
-
-] [32
+ <./images/n-NBA.pdf>] [33
 
 ]
-\openout4 = `template.vrb'.
-
- (./template.vrb) [33
-
-] [34
+[34
 
 ] [35
 
-]
-<images/n-NBA.pdf, id=2802, 302.63815pt x 130.04836pt>
-File: images/n-NBA.pdf Graphic file (type pdf)
-<use images/n-NBA.pdf>
-Package pdftex.def Info: images/n-NBA.pdf  used on input line 887.
-(pdftex.def)             Requested size: 307.28987pt x 132.05225pt.
- [36
+] [36
 
- <./images/n-NBA.pdf>] [37
-
-]
-[38
-
-] [39
-
-] [40
-
-] [41
+] [37
 
 ]
 \tf@nav=\write8
@@ -1818,26 +1784,25 @@ Package pdftex.def Info: images/n-NBA.pdf  used on input line 887.
 \tf@snm=\write10
 \openout10 = `template.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1041.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1041.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 878.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 878.
  (./template.aux
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1041.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1041.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 878.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 878.
 Package rerunfilecheck Info: File `template.out' has not changed.
 (rerunfilecheck)             Checksum: 0E8F69CB71CF7483440BF6914605F4B8;254.
  ) 
 Here is how much of TeX's memory you used:
- 34521 strings out of 481239
- 728034 string characters out of 5920376
- 1256121 words of memory out of 5000000
- 48841 multiletter control sequences out of 15000+600000
+ 34519 strings out of 481239
+ 728136 string characters out of 5920376
+ 1256185 words of memory out of 5000000
+ 48868 multiletter control sequences out of 15000+600000
  560412 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 88i,20n,118p,1930b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 88i,20n,118p,775b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
@@ -1857,10 +1822,10 @@ fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sftt0800.pfb>
-Output written on template.pdf (41 pages, 9167009 bytes).
+Output written on template.pdf (37 pages, 23637239 bytes).
 PDF statistics:
- 3222 PDF objects out of 3580 (max. 8388607)
- 2744 compressed objects within 28 object streams
- 111 named destinations out of 1000 (max. 500000)
- 157 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3559 PDF objects out of 3580 (max. 8388607)
+ 2848 compressed objects within 29 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
