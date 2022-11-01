@@ -88,11 +88,12 @@ modules = reactions
 \begin{frame}[fragile]
 \frametitle{Química computacional}
 Las simulaciones efectuadas por computadoras tienen múltiples ventajas:
-	\vspace{1cm}
 	\begin{itemize}
 \item Son más ecónomicas que los experimentos físicos.
-\item Pueden resolver múltiples problemas.
+\item Pueden resolver múltiples problema comparados con los que se podrían resolver con equipos de laboratorio específicos o de tecnología actual. 
 	\end{itemize}
+\vspace{.5cm}
+No obstante, los cálculos están limitados por la velocidad de la computadora y la capacidad de memoria de ésta.
 \end{frame}
 
 %...................................................
@@ -286,6 +287,22 @@ El desarollo de software científico de alto rendimiento en Termoquímica es una
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %...................................................
+%...................................................
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%...................................................
+\begin{frame}
+\frametitle{Conjunto de programas}
+\begin{center}
+\begin{figure}[h!]
+\includegraphics[scale=.38]{images/programs}
+\end{figure}
+\end{center}
+\end{frame}
+%...................................................
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%...................................................
 \begin{frame}
 \frametitle{Diagrama de flujo 1}
 \begin{center}
@@ -379,7 +396,7 @@ G4             #Categoria de metodo
 \begin{frame}[fragile]{Code}
 \frametitle{Paso 2: Selección del método}
 \begin{figure}
-\includegraphics[scale=.5]{images/atomization-CH3OH-methods}
+\includegraphics[scale=.5]{images/atomization-CH3OH}
 \end{figure}
 \tiny{\textit{Errol Lewars. Computational chemistry: introduction to the theory and applications of molecular and quantum mechanics. Springer, 2016.}}
 
@@ -672,6 +689,7 @@ int main (int argc, char *argv[])
 
 \begin{frame}
 \frametitle{Clases}
+Una clase puede pensar como una colección de variables (atributos o propiedades) y funciones (métodos) que permiten representar un conjunto de datos.\\
 Los nombres de las clases utilizadas para este programa son:
 \begin{itemize}
 	\item Enthalpyinputdata.
@@ -733,6 +751,24 @@ El trabajo de esta clase y sus variantes (EnthalpyG3, EnthalpyG3MP2, EnthalpyCBS
 \begin{center}
 \includegraphics[width=\textwidth]{images/n-NBA.pdf}
 \caption{Estructuras moleculares de 2-nitrobenzaldeh\'{i}do (2NBA), 3-nitrobenzaldeh\'{i}do (3NBA) y 4-nitrobenzaldeh\'{i}do (4NBA).}
+\label{n-NBA}
+\end{center}
+\end{figure}
+
+\end{frame}
+
+%..................................................
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%...................................................
+\begin{frame}
+\frametitle{Confórmeros}
+
+
+\begin{figure}[hbtp]
+\begin{center}
+\includegraphics[scale=.4]{images/conformeros}
+\caption{Confórmeros del nitrobenzaldehído, de arriba hacia abajo de izquerda a derecha: 2NBAa, 2NBAb, 3NBAa, 3NBAb y 4NBAa.}
 \label{n-NBA}
 \end{center}
 \end{figure}
@@ -854,7 +890,7 @@ El trabajo de esta clase y sus variantes (EnthalpyG3, EnthalpyG3MP2, EnthalpyCBS
 
 \vspace{1cm}
 
-\item Se implementaron otros métodos con un alto nivel de teoría y conjuntos de bases pequeñas, los cuales fueron: G3, G3MP2, CBS-APNO, CBS-QB3 y G4. De igual forma, se añadieron valores experimentales reportados por la comunidad científica: Tajti \textit{et al.}, NIST y Argonne.
+\item Se implementaron otros métodos los cuales fueron: G3, G3MP2, CBS-APNO, CBS-QB3 y G4. De igual forma, se añadieron valores experimentales reportados por la comunidad científica: Tajti \textit{et al.}, NIST y Argonne.
 
 \end{itemize}
 \end{frame}
